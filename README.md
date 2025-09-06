@@ -25,6 +25,7 @@
 ├── frontend.py                  # Streamlit (or similar) UI frontend
 ├── output/                      # Directory for generated PDFs and outputs
 ├── tectonic.exe                 # Bundled Tectonic executable (if applicable)
+├── requirements.txt             # reqirements for ai researcher
 ├── README.md                    # This documentation
 ├── LICENSE                      # Apache‑2.0 open-source license
 ```
