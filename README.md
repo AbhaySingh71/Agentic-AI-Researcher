@@ -1,10 +1,10 @@
-# Agentic AI Researcher
+# Agentic AI Researcher🤖📄
 
 **An AI‑powered research assistant that fetches, summarizes, and analyzes arXiv papers using LangGraph. Supports reading existing PDFs and exporting summaries to PDF via Tectonic.**
 
 ---
 
-## Key Features
+## ✨Key Features
 
 * **arXiv Integration** – Search and retrieve academic papers by title, author, abstract, or unique identifier (arXiv ID).
 * **Smart Summaries** – Generate concise, high-quality summaries to distill key insights.
@@ -14,7 +14,7 @@
 
 ---
 
-## Directory Structure
+## 📂Directory Structure
 
 ```
 ├── ai_researcher.py             # Core driver script (CLI/interactive logic)
@@ -33,7 +33,7 @@
 
 ## Getting Started
 
-### Prerequisites
+### 🚀 Prerequisites
 
 * Python 3.8 or higher
 * Optional: Tectonic installed or `tectonic.exe` included for PDF generation
@@ -54,7 +54,7 @@ For Tectonic, if not bundled, ensure:
 
 ---
 
-## Usage Guide
+## 🛠 Usage Guide
 
 ### 1. Fetch & Summarize from arXiv
 
