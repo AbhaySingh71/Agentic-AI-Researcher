@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Personalized Chain-of-Thought Prompting with Adaptive Memory}
+\author{Your Name \\ Your Affiliation}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper explores a novel approach to Chain-of-Thought (CoT) prompting that incorporates personalized memory. We propose a system where the ``abstract concepts'' stored in external memory are tailored to a specific user's cognitive style. We hypothesize that adapting the granularity of reasoning steps to match the user's preferences can improve the effectiveness and user experience of CoT prompting. We present a preliminary framework for implementing this approach and discuss potential evaluation metrics and future research directions.
+\end{abstract}
+
+\section{Introduction}
+
+Chain-of-Thought (CoT) prompting has emerged as a powerful technique for improving the performance of large language models (LLMs) on complex reasoning tasks \cite{wei2022chain}. By explicitly prompting the model to generate intermediate reasoning steps, CoT encourages more structured and interpretable solutions. However, traditional CoT prompting often adopts a one-size-fits-all approach, neglecting the diverse cognitive styles and preferences of individual users.
+
+This paper introduces the concept of personalized CoT prompting with adaptive memory. We propose a framework where the ``abstract concepts'' stored in external memory are tailored to a specific user's cognitive style. Our core hypothesis is that adapting the granularity of reasoning steps to match the user's preferences can significantly enhance the effectiveness and user experience of CoT prompting.
+
+The contributions of this paper are as follows: (1) We propose a novel framework for personalized CoT prompting with adaptive memory; (2) We outline a potential approach for modeling and inferring user cognitive style; and (3) We discuss potential evaluation metrics and future research directions for this promising area.
+
+\section{Related Work}
+
+\subsection{Chain-of-Thought Prompting}
+Chain-of-thought prompting was introduced by \cite{wei2022chain} and has since been explored extensively \cite{kojima2022large, zhang2022automatic}. These works demonstrate the ability of CoT prompting to improve reasoning capabilities in LLMs.
+
+\subsection{Memory-Augmented Language Models}
+The use of external memory has been shown to improve the performance of language models on various tasks \cite{grave2016end, miller2016key}. Recent work, such as ArcMemo \cite{ho2025arcmemo}, explores the use of memory in conjunction with chain-of-thought prompting.
+
+\subsection{Personalization in NLP}
+Personalization techniques have been widely applied in natural language processing to tailor models and systems to individual users \cite{linden2003amazon, das2007google}. However, the application of personalization to chain-of-thought prompting remains relatively unexplored.
+
+\section{Proposed Approach: Personalized CoT with Adaptive Memory}
+
+Our proposed approach aims to bridge the gap between generic CoT prompting and the unique cognitive needs of individual users. The core idea is to create a system that can adapt the granularity of reasoning steps to match the user's preferred level of detail.
+
+\subsection{Modeling User Cognitive Style}
+
+One of the key challenges in personalized CoT prompting is accurately modeling user cognitive style. We envision several potential approaches for this, including:
+
+\begin{itemize}
+    \item \textbf{Questionnaires:} Administering standardized questionnaires designed to assess cognitive traits such as learning style, information processing preferences, and problem-solving approaches.
+    \item \textbf{Interaction Data:} Analyzing user interaction data, such as the types of questions they ask, the level of detail they request, and their feedback on the model's responses.
+\end{itemize}
+
+\subsection{Memory Structure and Abstract Concepts}
+
+We propose using an external memory to store ``abstract concepts'' derived from previous CoT reasoning traces, similar to the approach taken in ArcMemo \cite{ho2025arcmemo}. These abstract concepts represent key insights, patterns, and relationships that the model has learned during its interactions with the user.
+
+\subsection{Algorithm for Adapting Granularity}
+
+The heart of our approach lies in the algorithm for adapting the granularity of reasoning steps based on user cognitive style. This algorithm would dynamically adjust the level of detail provided in the CoT prompts, based on the user's preferences.
+
+\section{Conclusion and Future Work}
+
+This paper has presented a novel framework for personalized chain-of-thought prompting with adaptive memory. We have argued that tailoring the granularity of reasoning steps to match the user's cognitive style can improve the effectiveness and user experience of CoT prompting.
+
+Future research directions include:
+
+\begin{itemize}
+    \item Developing more sophisticated methods for modeling user cognitive style.
+    \item Exploring different memory structures and adaptation algorithms.
+    \item Evaluating the system on a wider range of tasks and users.
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\begin{thebibliography}{9}
+
+\bibitem{wei2022chain} Wei, Jason, et al. \textit{Chain-of-thought prompting elicits reasoning in large language models.} arXiv preprint arXiv:2201.11903 (2022). \href{http://arxiv.org/abs/2201.11903}{http://arxiv.org/abs/2201.11903}
+
+\bibitem{kojima2022large} Kojima, Takeshi, et al. \textit{Large language models are zero-shot reasoners.} arXiv preprint arXiv:2205.11916 (2022). \href{http://arxiv.org/abs/2205.11916}{http://arxiv.org/abs/2205.11916}
+
+\bibitem{zhang2022automatic} Zhang, Xuezhi, et al. \textit{Automatic chain of thought prompting in large language models.} arXiv preprint arXiv:2210.03493 (2022). \href{http://arxiv.org/abs/2210.03493}{http://arxiv.org/abs/2210.03493}
+
+\bibitem{grave2016end} Grave, Edouard, Armand Joulin, and Tomas Mikolov. \textit{End-to-end memory networks.} arXiv preprint arXiv:1605.06035 (2016). \href{http://arxiv.org/abs/1605.06035}{http://arxiv.org/abs/1605.06035}
+
+\bibitem{miller2016key} Miller, Adam, et al. \textit{Key-value memory networks for directly reading documents.} arXiv preprint arXiv:1606.03126 (2016). \href{http://arxiv.org/abs/1606.03126}{http://arxiv.org/abs/1606.03126}
+
+\bibitem{ho2025arcmemo} Ho, Matthew, et al. \textit{ArcMemo: Abstract Reasoning Composition with Lifelong LLM Memory.} arXiv preprint arXiv:2509.04439 (2025). \href{http://arxiv.org/abs/2509.04439}{http://arxiv.org/abs/2509.04439}
+
+\bibitem{linden2003amazon} Linden, Greg, Brent Smith, and Jeremy York. \textit{Amazon. com recommendations: Item-to-item collaborative filtering.} IEEE Internet Computing 7.1 (2003): 76-80.
+
+\bibitem{das2007google} Das, Anirban, et al. \textit{Google news personalization: scalable online collaborative filtering.} Proceedings of the 16th international conference on World Wide Web. 2007.
+
+\end{thebibliography}
+
+\end{document}
