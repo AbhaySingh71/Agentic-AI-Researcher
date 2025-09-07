@@ -2,6 +2,14 @@
 
 **An AI‑powered research assistant that fetches, summarizes, and analyzes arXiv papers using LangGraph. Supports reading existing PDFs and exporting summaries to PDF via Tectonic.**
 
+
+
+https://github.com/user-attachments/assets/e55d1fc7-f2b2-470b-9c1c-b2cae302eaa7
+
+
+
+
+
 ---
 
 ## ✨Key Features
